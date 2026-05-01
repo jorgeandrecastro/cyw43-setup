@@ -1,6 +1,6 @@
 [package]
 name = "cyw43-setup"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Jorge Andre Castro <georgeandrec@gmail.com>"]
 license = "Unlicense"
