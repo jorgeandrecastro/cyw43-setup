@@ -1,6 +1,5 @@
 /target
-# Blobs firmware — propriétaires, ne pas committer
-firmware/*.bin
-firmware/*.BIN
+
+
 
 /target/
