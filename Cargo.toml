@@ -1,0 +1,28 @@
+[package]
+name = "cyw43-setup"
+version = "0.1.0"
+edition = "2021"
+authors = ["Jorge Andre Castro <georgeandrec@gmail.com>"]
+license = "Unlicense"
+description = "Wrapper de commodité pour cyw43-firmware : expose FW, CLM et NVRAM comme constantes statiques prêtes à l'emploi, sans gérer les chemins ni les include_bytes!."
+repository = "https://github.com/jorgeandrecastro/cyw43-setup"
+documentation = "https://docs.rs/cyw43-setup"
+readme = "README.md"
+keywords = ["cyw43", "pico-w", "pico2w", "wifi", "embedded"]
+categories = ["embedded", "no-std"]
+
+include = [
+    "src/**/*",
+    "firmware/nvram_rp2040.bin",
+    "README.md",
+    "LICENSE",
+]
+
+[dependencies]
+cyw43-firmware = { version = "0.1", features = ["wifi"] }
+aligned = "0.4"
+
+[features]
+default = ["wifi"]
+wifi = ["cyw43-firmware/wifi"]
+bluetooth = ["cyw43-firmware/bluetooth"]
