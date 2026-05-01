@@ -28,7 +28,7 @@ checksum = "c1f6670bcc22685ab25c8262b9bfdcdbbb12e12605569fc4bcf8b01aa5dc55c2"
 
 [[package]]
 name = "cyw43-setup"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "aligned",
  "cyw43-firmware",
