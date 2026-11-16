@@ -1,10 +1,10 @@
 [package]
 name = "cyw43-setup"
-version = "0.1.1"
-edition = "2021"
+version = "0.2.0"
+edition = "2024"
 authors = ["Jorge Andre Castro <georgeandrec@gmail.com>"]
 license = "Unlicense"
-description = "Wrapper pour cyw43-firmware exposant FW, CLM et NVRAM comme constantes prêtes à l'emploi, sans gestion de fichiers ni include_bytes!"
+description = "Wrapper for cyw43-firmware exposing FW, CLM, and NVRAM as ready-to-use constants without file management or include_bytes!"
 repository = "https://github.com/jorgeandrecastro/cyw43-setup"
 documentation = "https://docs.rs/cyw43-setup"
 readme = "README.md"

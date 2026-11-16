@@ -3,43 +3,43 @@
 
 use aligned::{A4, Aligned};
 
-/// Firmware Wi-Fi du CYW43439, aligné sur 4 octets.
+/// CYW43439 Wi-Fi firmware, aligned to 4 bytes.
 ///
-/// Prêt à passer directement à `cyw43::new(..., &FW, NVRAM)`.
+/// Ready to pass directly to `cyw43::new(..., &FW, NVRAM)`.
 ///
-/// # Licence
-/// Voir [README.md](../README.md#licences) et
+/// # License
+/// See [README.md](../README.md#licenses) and
 /// <https://github.com/georgerobotics/cyw43-driver/tree/main/firmware>.
 #[cfg(feature = "wifi")]
 pub static FW: Aligned<A4, [u8; 231077]> =
     Aligned(*cyw43_firmware::CYW43_43439A0);
 
-/// Blob CLM (Country Locale Matrix) du CYW43439.
+/// CYW43439 CLM (Country Locale Matrix) blob.
 ///
-/// À passer à `control.init(CLM).await`.
+/// Pass to `control.init(CLM).await`.
 ///
-/// # Licence
-/// Voir [README.md](../README.md#licences) et
+/// # License
+/// See [README.md](../README.md#licenses) and
 /// <https://github.com/georgerobotics/cyw43-driver/tree/main/firmware>.
 #[cfg(feature = "wifi")]
 pub static CLM: &[u8] =
     cyw43_firmware::CYW43_43439A0_CLM;
 
-/// Firmware Bluetooth du CYW43439.
+/// CYW43439 Bluetooth firmware.
 ///
-/// # Licence
-/// Voir [README.md](../README.md#licences) et
+/// # License
+/// See [README.md](../README.md#licenses) and
 /// <https://github.com/georgerobotics/cyw43-driver/tree/main/firmware>.
 #[cfg(feature = "bluetooth")]
 pub static BTFW: &[u8] =
     cyw43_firmware::CYW43_43439A0_BTFW;
 
-/// Configuration NVRAM pour RP2040 / RP2350.
+/// NVRAM configuration for RP2040 / RP2350.
 ///
-/// Prêt à passer directement à `cyw43::new(..., &FW, NVRAM)`.
+/// Ready to pass directly to `cyw43::new(..., &FW, &NVRAM)`.
 ///
-/// # Licence
-/// Voir [README.md](../README.md#licences).
+/// # License
+/// See [README.md](../README.md#licenses).
 
 
 #[cfg(feature = "wifi")]
