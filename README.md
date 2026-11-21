@@ -37,14 +37,14 @@ Add the dependency to `Cargo.toml` and you're ready to go.
 
 ```toml
 [dependencies]
-cyw43-setup = "0.2"
+cyw43-setup = "1.0.0"
 cyw43 = "0.3"
 ```
 
 For Bluetooth support:
 ```toml
 [dependencies]
-cyw43-setup = { version = "0.2", features = ["bluetooth"] }
+cyw43-setup = { version = "1.0.0", features = ["bluetooth"] }
 ```
 
 ---
